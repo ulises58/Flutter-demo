@@ -1,5 +1,7 @@
 import 'package:demo/pages/buttons_page.dart';
 import 'package:demo/pages/chips_page.dart';
+import 'package:demo/pages/images_page.dart';
+import 'package:demo/pages/texts_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +16,8 @@ class MyApp extends StatelessWidget {
       routes: {
         ChipsPage.ROUTE: (BuildContext context) => ChipsPage(),
         ButtonsPage.ROUTE: (BuildContext context) => ButtonsPage(),
+        TextsPage.ROUTE: (BuildContext context) => TextsPage(),
+        ImagesPage.ROUTE: (BuildContext context) => ImagesPage(),
       },
     );
   }
