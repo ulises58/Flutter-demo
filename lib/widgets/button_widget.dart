@@ -1,17 +1,18 @@
-import 'package:demo/models/button_model.dart';
 import 'package:flutter/material.dart';
+import '../models/button_model.dart';
 
-class ButtonWidget extends StatelessWidget {
+
+class ButtonWidget {
   
-  final ButtonModel buttonModel;
-  const ButtonWidget (this.buttonModel);
-  
-  @override
-  Widget build(BuildContext context) {
-    return buildWidget();
+  static Widget build(ButtonModel buttonModel) {
+    return buildWidget(buttonModel);
   }
 
-  Widget buildWidget() {
+  /*
+  * Construir widget
+   */
+
+  static Widget buildWidget(ButtonModel buttonModel) {
 
     switch(buttonModel.type){
       case "flat":

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       initialRoute: ChipsPage.ROUTE,
       routes: {
         ChipsPage.ROUTE: (BuildContext context) => ChipsPage(),
-        ButtonsPage.ROUTE: (BuildContext context) => ButtonsPage()
+        ButtonsPage.ROUTE: (BuildContext context) => ButtonsPage(),
       },
     );
   }

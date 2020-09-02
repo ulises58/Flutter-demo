@@ -1,16 +1,13 @@
 import 'package:demo/models/chip_model.dart';
 import 'package:flutter/material.dart';
 
-class ChipWidget extends StatelessWidget {
-  final ChipModel chipModel;
-  const ChipWidget (this.chipModel);
+class ChipWidget {  
   
-  @override
-  Widget build(BuildContext context) {
-    return buildWidget();
+  static Widget build(ChipModel chipModel) {
+    return buildWidget(chipModel);
   }
 
-  Widget buildWidget(){
+  static Widget buildWidget(ChipModel chipModel){
     return  Chip(
         backgroundColor: Color(int.parse(chipModel.colorBg, radix: 16)),
         avatar: CircleAvatar(
